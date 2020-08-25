@@ -25,6 +25,7 @@ body
   font-family: $default-font
   overflow-x: hidden
   color: $text
+  background-color: #f7f7f7
   input, textarea
     border: #666 1px solid
     outline: none
@@ -51,6 +52,7 @@ a:hover, a:active, a:focus
 a
   color: $accent
   text-decoration: none
+  +mt(.3s)
 
 a, li, button
   outline: none!important
@@ -64,4 +66,25 @@ ul
   display: none!important
 // ======= END TEMPLATE STYLES =======
 
+.content
+  margin-left: 295px
+  width: calc(100% - 295px)
 
+.btn
+  display: inline-block
+  cursor: pointer
+  line-height: 1
+  white-space: nowrap
+  +mt(.3s)
+  box-shadow: none
+  padding: 13px 18px 13px 26px
+
+.btn-red
+  background-color: $accent
+  color: #fff
+  &:hover
+    color: #fff
+    background-color: darken($accent, 5%)
+  &:active, &:focus
+    color: #fff
+    background-color: $accent

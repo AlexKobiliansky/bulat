@@ -1,0 +1,39 @@
+body
+  height: 5000px
+
+.sidebar
+  position: fixed
+  left: 0
+  top: 0
+  background-color: #fff
+  width: 295px
+  z-index: 100
+  overflow-y: scroll
+  -ms-overflow-style: none
+  scrollbar-width: none
+  height: 100vh
+  &::-webkit-scrollbar
+    display: none
+  .logo
+    display: inline-block
+    width: 100%
+    text-align: center
+    padding: 30px 0
+    border-bottom: 1px solid #dcdcdc
+
+.side-mnu
+  a
+    display: block
+    text-transform: uppercase
+    font-weight: 500
+    color: $text
+    padding: 15px 30px 13px
+    border-bottom: 1px solid #dcdcdc
+    &:hover
+      background-color: $accent
+      color: #fff
+      border-color: $accent
+
+.side-bottomline
+  height: 29px
+  background-color: #dcdcdc
