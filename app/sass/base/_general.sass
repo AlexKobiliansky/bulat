@@ -85,6 +85,68 @@ ul
   &:hover
     color: #fff
     background-color: darken($accent, 5%)
+    .btn-line
+      &:after, &:before
+        width: 10px
+        right: 0
+      &:before
+        top: 4px
+      &:after
+        top: -4px
   &:active, &:focus
     color: #fff
     background-color: $accent
+
+
+.btn-line
+  width: 65px
+  height: 1px
+  background-color: #fff
+  position: relative
+  display: inline-block
+  margin-left: 9px
+  top: -2px
+  &:after, &:before
+    content: ''
+    position: absolute
+    width: 0
+    height: 1px
+    background-color: #fff
+    right: 0
+    +mt(.3s)
+  &:after
+    transform: rotate(45deg)
+    top: 0
+    right: -1px
+  &:before
+    transform: rotate(-45deg)
+    top: 0
+    right: -1px
+
+
+.owl-carousel
+  position: relative
+  .owl-nav
+    position: absolute
+    width: 100%
+    left: 0
+    top: calc(50% - 23px)
+    button.owl-prev, button.owl-next
+      width: 46px
+      height: 46px
+      +mt(.3s)
+      cursor: pointer
+      background-image: url('../img/icons/arrow-mnu-white.svg')
+      background-size: 8px 14px
+      background-position: center center
+      background-repeat: no-repeat
+      position: absolute
+    button.owl-prev
+      transform: rotate(180deg)
+      border: 1px solid #86888f
+      &:hover
+        background-color: #86888f
+    button.owl-next
+      background-color: $accent
+      &:hover
+        background-color: darken($accent, 5%)

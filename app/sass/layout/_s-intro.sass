@@ -1,0 +1,50 @@
+.intro-slide
+  height: 720px
+  +bg-cover
+  padding: 110px 126px
+  color: #fff
+  h1
+    max-width: 50%
+    font-size: 49px
+    line-height: 1.25
+    font-weight: 900
+    text-transform: uppercase
+    margin-bottom: 20px
+  &-desc
+    font-weight: 700
+    max-width: 360px
+    margin-bottom: 45px
+  &-num
+    position: absolute
+    font-size: 190px
+    line-height: 1
+    opacity: .05
+    left: -70px
+    top: -40px
+  &-content
+    position: relative
+
+.intro-slider
+  .owl-stage
+    left: -45px
+  .owl-nav
+    button.owl-prev
+      left: 53px
+    button.owl-next
+      right: 53px
+  .owl-dots
+    position: absolute
+    top: 124px
+    right: 150px
+    button.owl-dot
+      width: 7px
+      height: 7px
+      background-color: #d0d0d0
+      cursor: pointer
+      border-radius: 50%
+      margin: 0 10px
+      &.active
+        background-color: $accent
+
+
+

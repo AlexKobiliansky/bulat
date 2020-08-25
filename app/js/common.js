@@ -65,6 +65,29 @@ $(document).ready(function(){
      */
 
 
+    $('.intro-slider').owlCarousel({
+        loop:true,
+        nav:true,
+        items: 1,
+        dots: true,
+        stagePadding: 45,
+        navText: ['',''],
+        navSpeed: 800,
+        responsive: {
+            0: {
+                stagePadding: 5,
+                nav: false
+            },
+            480: {
+                stagePadding: 15
+            },
+            1400: {
+                stagePadding: 45
+            }
+        }
+    });
+
+
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
