@@ -1,0 +1,98 @@
+.s-about
+  height: 980px
+  background-image: url('../img/bg-about.jpg')
+  +bg-cover
+  position: relative
+  z-index: 2
+  color: #fff
+
+.advantages-wrap
+  display: grid
+  grid-template-columns: repeat(7, 1fr)
+  grid-gap: 30px
+  position: relative
+  top: -35px
+
+.adv-item
+  text-align: center
+  background-color: #fff
+  background-image: url('../img/bg-advantage.jpg')
+  color: $text
+  +bg-cover
+  padding: 45px 15px 35px
+  .svg
+    fill: $accent
+    height: 65px
+    width: auto
+    margin-bottom: 22px
+
+.about-content
+  width: 500px
+  margin-left: auto
+  padding-right: 60px
+  .section-title
+    margin-bottom: 45px
+
+.about-desc
+  margin-bottom: 30px
+
+.about-wrap
+  position: relative
+  padding-top: 80px
+
+.btn-about
+  color: #fff
+  font-weight: 500
+  padding-left: 2px
+  padding-right: 2px
+  position: relative
+  &-before, &-after
+    height: 1px
+    background-color: #fff
+    position: relative
+    +mt(.3s)
+    display: inline-block
+    top: -3px
+  &-before
+    width: 9px
+    margin-right: 6px
+    +mt(.3s)
+  &-after
+    width: 51px
+    margin-left: 6px
+    +mt(.3s)
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    transition: opacity 0s ease, width .3s ease, height .2s ease
+    opacity: 0
+  &:before
+    left: 0
+    bottom: 0
+    border-left: 1px solid #fff
+    border-bottom: 1px solid #fff
+  &:after
+    right: 0
+    top: 0
+    border-top: 1px solid #fff
+    border-right: 1px solid #fff
+  &:hover
+    &:after, &:before
+      width: 100%
+      height: 100%
+      opacity: 1
+    .btn-about
+      &-before
+        width: 30px
+        opacity: 0
+      &-after
+        width: 30px
+        opacity: 0
+
+.about-title
+  position: absolute
+  top: 80px
+  left: 70px
+

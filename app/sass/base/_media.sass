@@ -3,6 +3,16 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1600px)
+  .advantages-wrap
+    grid-gap: 10px
+
+  .adv-item
+    padding-top: 25px
+    padding-bottom: 20px
+    .svg
+      margin-bottom: 10px
+
 @media (max-width: 1500px)
   .main-mnu
     a
@@ -10,6 +20,15 @@
 
 @media (max-width: 1400px)
 
+  .about-content
+    width: 450px
+    padding-right: 0
+
+  .s-about
+    background-position-x: -200px
+
+  .adv-item
+    font-size: 12px
 
   .intro-slider
     .owl-nav
@@ -34,6 +53,27 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .about-title
+    display: none
+
+  .about-content
+    width: 500px
+    margin-left: 0
+    .section-title
+      margin-bottom: 30px
+
+  .s-about
+    height: auto
+    padding-bottom: 100px
+    background-position-x: 0
+    background-image: url('../img/bg-about-mob.jpg')
+
+  .advantages-wrap
+    grid-template-columns: repeat(4, 1fr)
+
+  .adv-item
+    font-size: 14px
 
   .main-head
     background-color: #fff
@@ -105,6 +145,16 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+
+  .about-wrap
+    padding-top: 50px
+
+  .about-content
+    width: 100%
+
+  .advantages-wrap
+    grid-template-columns: repeat(3, 1fr)
+
   .intro-slider
     .owl-nav
       button.owl-prev
@@ -127,6 +177,20 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .section-title
+    font-size: 24px
+
+  .s-about
+    padding-top: 40px
+
+  .advantages-wrap
+    top: 0
+    grid-template-columns: repeat(2, 1fr)
+
+  .adv-item
+    .svg
+      height: 50px
 
   .intro-slide
     padding: 50px 45px 80px
@@ -168,7 +232,8 @@
 
 @media(max-width: 390px)
 
-
+  .adv-item
+    font-size: 12px
 
   .btn
     &-line
