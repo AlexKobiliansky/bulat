@@ -90,10 +90,22 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-catalog
+    margin-bottom: 70px
 
+  .review-slide
+    &-top
+      flex-direction: column
+    &-img
+      margin-bottom: 15px
+    &-name
+      width: 100%
+      text-align: center
+      margin-bottom: 10px
 
 
   .clouds-wrap
+    padding-bottom: 50px
     .s-form
       top: -75px
 
@@ -240,6 +252,26 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-reviews
+    .section-title
+      margin-bottom: 30px
+
+  .reviews-slider
+    padding: 0
+    .owl-dots
+      width: 100%
+      text-align: center
+      position: relative
+      top: 20px
+      button.owl-dot
+        width: 10px
+        height: 10px
+        background-color: #d9e0ea
+        border-radius: 50%
+        margin: 0 5px
+        &.active
+          background-color: $accent
+
   .s-catalog
     .section-title
       margin-bottom: 30px
@@ -303,6 +335,10 @@
         width: 100%
 
 @media(max-width: 390px)
+
+  .review-slide
+    padding-left: 15px
+    padding-right: 15px
 
   .cat-item
     height: 140px

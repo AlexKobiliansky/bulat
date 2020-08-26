@@ -119,6 +119,30 @@ $(document).ready(function(){
         }
     });
 
+    $('.reviews-slider').owlCarousel({
+        loop:true,
+        nav:true,
+        items: 2,
+        dots: false,
+        navText: ['',''],
+        margin: 28,
+        navSpeed: 600,
+        responsive: {
+            0: {
+                items: 1,
+                dots: true,
+                nav: false
+            },
+            480: {
+                dots: false,
+                items: 1
+            },
+            992: {
+                items: 2
+            }
+        }
+    });
+
 
 
     $.validate({

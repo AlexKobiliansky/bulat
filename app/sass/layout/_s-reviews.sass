@@ -1,0 +1,43 @@
+.s-reviews
+  .section-title
+    color: #fff
+    text-align: center
+    margin-bottom: 45px
+
+.reviews-slider
+  padding: 0 70px
+  .owl-nav
+    position: absolute
+    width: 100%
+    left: 0
+    top: calc(50% - 20px)
+    button.owl-next
+      right: 0
+    button.owl-prev
+      border-color: #d9e0ea
+      &:hover
+        background-color: #d9e0ea
+
+.review-slide
+  background-color: #fff
+  padding: 24px 32px 42px
+  &-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 25px
+  &-img
+    width: 82px
+    height: 82px
+    border-radius: 50%
+    +bg-cover
+  &-name
+    font-size: 18px
+    line-height: 1
+    font-weight: 700
+    width: calc(100% - 200px)
+    margin-left: auto
+  &-date
+    text-align: right
+    width: 90px
+    color: rgba($text, .5)
