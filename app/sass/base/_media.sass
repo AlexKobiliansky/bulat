@@ -3,7 +3,17 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1800px)
+  .cat-item
+    padding-left: 15px
+    &-title
+      font-size: 16px
+
 @media (max-width: 1600px)
+
+  .catalog-wrap
+    grid-template-columns: repeat(5, 1fr)
+
   .advantages-wrap
     grid-gap: 10px
 
@@ -39,6 +49,9 @@
 
 @media (max-width: 1400px)
 
+  .catalog-wrap
+    grid-gap: 10px
+
   .about-content
     width: 450px
     padding-right: 0
@@ -70,8 +83,14 @@
       font-size: 14px
       padding: 18px 12px
 
+@media (max-width: 1400px)
+  .catalog-wrap
+    grid-template-columns: repeat(4, 1fr)
+
 // ≥1200px
 +media-breakpoint-down(lg)
+
+
 
 
   .clouds-wrap
@@ -142,6 +161,9 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .catalog-wrap
+    grid-template-columns: repeat(3, 1fr)
+
   .intro-slider
     .owl-dots
       top: 60px
@@ -176,7 +198,8 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
-
+  .catalog-wrap
+    grid-template-columns: repeat(2, 1fr)
 
   .s-form-block
     .section-form
@@ -216,6 +239,16 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-catalog
+    .section-title
+      margin-bottom: 30px
+
+  .cat-item
+    height: 180px
+    &-title
+      font-size: 14px
+      top: 18px
 
   .section-title
     font-size: 24px
@@ -270,6 +303,14 @@
         width: 100%
 
 @media(max-width: 390px)
+
+  .cat-item
+    height: 140px
+    padding-left: 10px
+    &-title
+      font-size: 11px
+      line-height: 1.5
+      top: 18px
 
   form
     h3
