@@ -25,6 +25,11 @@
 
 @media (max-width: 1500px)
 
+  .contacts-block
+    width: 500px
+    padding-left: 45px
+    padding-right: 75px
+
   form
     h3
       font-size: 24px
@@ -89,6 +94,15 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .contacts-block
+    padding-left: 25px
+    padding-right: 40px
+    .section-title
+      margin-bottom: 30px
+
+  .contact-items-wrap
+    margin-bottom: 30px
 
   .s-catalog
     margin-bottom: 70px
@@ -173,6 +187,16 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+
+  .contacts-block
+    position: relative
+    width: 100%
+    left: 0
+    top: 0
+
+  #map
+    height: 500px
+
   .catalog-wrap
     grid-template-columns: repeat(3, 1fr)
 
@@ -251,6 +275,23 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .contacts-block
+    padding: 35px 15px
+
+  #map
+    height: 400px
+
+  .contact-item
+    &-desc
+      width: calc(100% - 40px)
+
+  .gm-style .gm-style-iw-c
+    font-size: 14px
+
+  .gm-style .gm-style-iw-c
+    left: 75px
+    top: 50px
 
   .s-reviews
     .section-title
