@@ -131,6 +131,16 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .page-head
+    .page-title
+      padding-left: 0
+
+  .p-contacts
+    &-left
+      width: 50%
+    &-right
+      width: 50%
+
   .section-container
     padding: 0
 
@@ -281,6 +291,16 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .p-contacts
+    &-wrap
+      flex-direction: column-reverse
+    &-left
+      width: 100%
+    &-right
+      width: 100%
+      .contact-item
+        margin-bottom: 20px
 
   .s-nopage
     padding-left: 15px
