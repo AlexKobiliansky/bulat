@@ -11,6 +11,9 @@
 
 @media (max-width: 1600px)
 
+  .category-wrap
+    grid-template-columns: repeat(3, 1fr)
+
   .catalog-wrap
     grid-template-columns: repeat(5, 1fr)
 
@@ -245,6 +248,8 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .category-wrap
+    grid-template-columns: repeat(2, 1fr)
 
   .contacts-block
     position: relative
@@ -291,6 +296,12 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .category-wrap
+    display: block
+
+  .category-item
+    margin-bottom: 20px
 
   .p-contacts
     &-wrap
@@ -386,6 +397,14 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-category
+    padding-top: 50px
+
+  .category-item
+    padding-top: 15px
+    &-img
+      margin-bottom: 15px
 
   .s-delivery
     .page-title
