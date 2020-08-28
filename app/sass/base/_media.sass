@@ -25,6 +25,9 @@
 
 @media (max-width: 1500px)
 
+  .delivery-bottomline
+    height: 270px
+
   .foot-mnu
     li
       margin-right: 20px
@@ -54,7 +57,7 @@
     .form-labels-wrap
       margin-bottom: 30px
 
-  .clouds-wrap
+  .clouds-wrap, .delivery-bottomline-wrap
     form
       padding: 40px 30px
 
@@ -128,7 +131,13 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .section-container
+    padding: 0
 
+  .delivery-bottomline-wrap
+    .s-form
+      .container
+        padding: 0
 
   .main-foot
     padding-left: 0
@@ -358,6 +367,30 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-delivery
+    .page-title
+      margin-bottom: 20px
+
+  .delivery-wrap
+    position: relative
+    padding-bottom: 280px
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      background-color: rgba(#070f27, .4)
+    .container
+      position: relative
+
+  .breadcrumbs
+    padding-bottom: 30px
+
+  .page-title
+    font-size: 28px
+
   .nopage-wrap
     h1
       font-size: 130px
@@ -512,6 +545,9 @@
 
 @media(max-width: 390px)
 
+  .delivery-bottomline
+    height: 170px
+
   .review-slide
     padding-left: 15px
     padding-right: 15px
@@ -537,7 +573,7 @@
     input
       padding: 10px 15px
 
-  .clouds-wrap
+  .clouds-wrap, .delivery-bottomline-wrap
     form
       padding: 30px 25px
 
