@@ -1,0 +1,155 @@
+.s-product
+  padding: 45px 0 100px
+
+.product
+  &-top
+    display: flex
+    align-items: flex-start
+    margin-bottom: 30px
+  &-img
+    width: 50%
+    background-color: #fff
+    img
+      width: 100%
+      height: 100%
+      object-fit: contain
+  &-info
+    width: 50%
+    padding-left: 65px
+    font-size: 18px
+  &-title
+    font-size: 21px
+    font-weight: 700
+    margin-bottom: 30px
+  &-char
+    display: flex
+    justify-content: space-between
+    margin-bottom: 10px
+    .val
+      width: 100px
+      text-align: right
+    .desc
+      width: calc(100% - 100px)
+      padding-right: 10px
+  &-form
+    padding: 40px 0
+    border-bottom: 1px solid #8e9cb3
+    label
+      display: inline-block
+      span
+        display: block
+        line-height: 1
+        margin-bottom: 10px
+    input
+      border-color: #8e9cb3
+      padding: 15px 16px 12px
+      line-height: 1
+    input[type="text"]
+      width: 105px
+    input[type="date"]
+      width: 145px
+      &::-webkit-calendar-picker-indicator
+        display: none
+  &-form-desc
+    font-size: 14px
+    opacity: .5
+    margin-bottom: 30px
+  &-info-bottom
+    padding-top: 30px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    .btn
+      font-size: 14px
+      padding-top: 17px
+      padding-bottom: 15px
+  &-price
+    padding-right: 15px
+    line-height: 1
+    .desc
+      font-weight: 700
+      margin-bottom: 8px
+    .val
+      font-size: 30px
+      font-weight: 900
+      color: $accent
+  &-bottom
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  &-tabs
+    width: 68%
+  &-additional
+    width: 32%
+
+.product-info-bottom
+  &.mobile-version
+    display: none
+
+.product-form
+  &.mobile-version
+    display: none
+
+.product-tabs
+  &-controls
+    font-size: 0
+    margin-bottom: 7px
+  li
+    display: inline-block
+    margin-right: 8px
+    &:last-child
+      margin-right: 0
+    &.ui-tabs-active
+      a
+        background-color: #8e9cb3
+        color: #fff
+  a
+    display: block
+    font-size: 20px
+    line-height: 1
+    white-space: nowrap
+    font-weight: 700
+    padding: 20px 28px
+    background-color: #fff
+    color: $text
+
+.product-tab
+  background-color: #fff
+  padding: 24px
+
+.product-additional
+  padding-left: 10px
+
+.add-item
+  line-height: 1
+  margin-bottom: 20px
+  &-title
+    background-color: #fff
+    font-size: 20px
+    font-weight: 700
+    padding: 20px 28px
+    margin-bottom: 7px
+  &-content
+    background-color: #fff
+    padding: 28px 28px 8px
+
+.add-subitem
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  font-size: 18px
+  margin-bottom: 20px
+  &-price
+    width: 115px
+    text-align: right
+  &-title
+    width: calc(100% - 115px)
+    padding-right: 15px
+    font-weight: 700
+
+
+
+
+
+
+

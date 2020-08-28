@@ -28,6 +28,54 @@
 
 @media (max-width: 1500px)
 
+  .product
+    &-tabs
+      width: 60%
+    &-additional
+      width: 40%
+    &-tabs-controls
+      margin-bottom: 0
+      a
+        font-size: 16px
+        padding: 15px 11px
+        margin-bottom: 7px
+
+  .add-item
+    &-title
+      font-size: 16px
+      padding: 15px 11px
+    &-content
+      padding: 20px 11px 5px
+
+  .add-subitem
+    font-size: 14px
+    &-price
+      width: 95px
+    &-title
+      width: calc(100% - 95px)
+
+  .product
+    &-info
+      padding-left: 30px
+      font-size: 14px
+    &-title
+      margin-bottom: 15px
+    &-form
+      padding: 20px 0
+      label
+        span
+          font-size: 12px
+          margin-bottom: 5px
+        input
+          padding: 10px 12px 8px
+        input[type="text"]
+          width: 80px
+        input[type="date"]
+          width: 115px
+    &-form-desc
+      font-size: 12px
+      margin-bottom: 15px
+
   .delivery-bottomline
     height: 270px
 
@@ -248,6 +296,28 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .product-info-bottom
+    &.desktop-version
+      display: none
+    &.mobile-version
+      display: flex
+
+  .product-form
+    &.desktop-version
+      display: none
+    &.mobile-version
+      display: block
+
+  .product
+    &-top
+      flex-direction: column
+    &-img
+      margin-bottom: 30px
+      width: 100%
+    &-info
+      width: 100%
+      padding-left: 0
+
   .category-wrap
     grid-template-columns: repeat(2, 1fr)
 
@@ -296,6 +366,21 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+
+  .s-product
+    padding-bottom: 40px
+
+  .product-bottom
+    flex-direction: column
+
+  .product-tabs
+    width: 100%
+    margin-bottom: 10px
+
+  .product-additional
+    padding-left: 0
+    width: 100%
 
   .category-wrap
     display: block
@@ -397,6 +482,30 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  #popup-rent-form
+    h3
+      font-size: 20px
+
+  .product
+    &-form
+      label
+        display: block
+        margin-bottom: 10px
+      input
+        width: 140px!important
+    &-info-bottom
+      flex-direction: column
+      align-items: center
+    &-price
+      text-align: center
+      padding-right: 0
+      margin-bottom: 20px
+      .desc
+        margin-bottom: 10px
+
+  .slash-wrap
+    display: none
 
   .s-category
     padding-top: 50px
@@ -583,6 +692,13 @@
         width: 100%
 
 @media(max-width: 390px)
+
+  .product
+    &-tabs-controls
+      a
+        font-size: 12px
+    &-tab
+      padding: 20px 15px
 
   .delivery-bottomline
     height: 170px

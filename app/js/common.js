@@ -144,11 +144,23 @@ $(document).ready(function(){
         }
     });
 
+    $('.product-tabs').tabs();
 
     $('.preloader').fadeOut();
 
+    $('.product-form input').on('change', function(){
+        let th = $(this);
+        let label = th.parents('label');
+        let period = th.val();
+        let name = th.attr('name');
+        label.siblings('label').find('input').val("");
+
+        $('#popup-rent-period').val(period);
+        $('#popup-rent-period').attr('name', name);
+    })
+
     $(function() {
-        $("a[href='#popup-form']").magnificPopup({
+        $("a[href='#popup-form'], a[href='#popup-rent-form']").magnificPopup({
             type: "inline",
             fixedContentPos: !1,
             fixedBgPos: !0,
