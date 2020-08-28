@@ -160,6 +160,10 @@
       padding: 18px 12px
 
 @media (max-width: 1400px)
+
+  .news-wrap
+    grid-gap: 30px
+
   .catalog-wrap
     grid-template-columns: repeat(4, 1fr)
 
@@ -367,6 +371,14 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-news
+    padding-bottom: 20px
+
+  .news-wrap
+    display: block
+
+  .news-item
+    margin-bottom: 30px
 
   .s-product
     padding-bottom: 40px
@@ -692,6 +704,12 @@
         width: 100%
 
 @media(max-width: 390px)
+
+  .news-item
+    &-img
+      height: 180px
+    &-title
+      font-size: 14px
 
   .product
     &-tabs-controls

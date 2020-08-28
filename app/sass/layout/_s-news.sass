@@ -1,0 +1,39 @@
+.s-news
+  padding-top: 30px
+  padding-bottom: 70px
+
+.news-wrap
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-gap: 70px
+
+.news-item
+  display: inline-block
+  &-img
+    display: block
+    height: 220px
+    +bg-cover
+    margin-bottom: 30px
+  &-midline
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    margin-bottom: 18px
+  &-date
+    width: 80px
+    text-align: right
+    font-weight: 800
+    color: rgba($text, .29)
+  &-title
+    width: calc(100% - 80px)
+    font-size: 18px
+    font-weight: 700
+    color: $text
+    +mt(.3s)
+    line-height: 1.25
+    padding-right: 5px
+  &-excerpt
+    color: $text
+  &:hover
+    .news-item-title
+      color: $accent
