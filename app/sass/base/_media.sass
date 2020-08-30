@@ -28,6 +28,28 @@
 
 @media (max-width: 1500px)
 
+  .object-item
+    &-right
+      padding-top: 0
+      padding-left: 30px
+      h2
+        margin-bottom: 20px
+      p
+        margin-bottom: 12px
+
+  .object-slider-nav
+    width: 90px
+
+  .object-nav
+    height: 80px
+    margin-bottom: 10px
+
+  .object-slide
+    height: 350px
+
+  .object-slider
+    width: calc(100% - 100px)
+
   .product
     &-tabs
       width: 60%
@@ -300,6 +322,18 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .s-objects
+    padding: 50px 0 20px
+
+  .object-item
+    flex-direction: column
+    &-left
+      width: 100%
+      margin-bottom: 30px
+    &-right
+      width: 100%
+      padding-left: 0
+
   .product-info-bottom
     &.desktop-version
       display: none
@@ -494,6 +528,30 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .object-item
+    margin-bottom: 50px
+
+  .object-slider-wrap
+    flex-direction: column
+
+  .object-slide
+    height: 240px
+
+  .object-slider
+    width: 100%
+    margin-bottom: 8px
+
+  .object-slider-nav
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+
+  .object-nav
+    margin-bottom: 0
+    width: calc(25% - 6px)
+    height: 70px
 
   .s-page
     padding: 35px 0
@@ -709,6 +767,17 @@
         width: 100%
 
 @media(max-width: 390px)
+
+  .object-slide
+    height: 180px
+
+  .object-nav
+    height: 60px
+
+  .object-item
+    &-right
+      h2
+        font-size: 14px
 
   .s-page
     padding: 35px 0

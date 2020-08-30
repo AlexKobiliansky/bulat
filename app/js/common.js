@@ -144,9 +144,36 @@ $(document).ready(function(){
         }
     });
 
+    $('.object-slider').owlCarousel({
+        loop:false,
+        nav:true,
+        items: 1,
+        thumbs: true,
+        dots: false,
+        thumbsPrerendered: true,
+        thumbItemClass: 'object-nav',
+        animateIn: "fadeIn",
+        animateOut: "fadeOut",
+        mouseDrag: false,
+        navText: ['', ''],
+        responsive: {
+            0: {
+                nav: false
+            },
+            480: {
+                nav: true
+            }
+        }
+    });
+
     $('.product-tabs').tabs();
 
     $('.preloader').fadeOut();
+
+    $('.object-slider').photoswipe({
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+    });
 
     $('.product-form input').on('change', function(){
         let th = $(this);
