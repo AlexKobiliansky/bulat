@@ -322,6 +322,24 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .s-service
+    padding: 50px 0
+
+  .service-wrap
+    flex-direction: column
+    margin-bottom: 50px
+    &:after
+      display: none
+
+  .service-desc
+    width: 100%
+    margin-bottom: 30px
+    padding-right: 0
+
+  .service-scheme
+    width: 100%
+    padding-left: 0
+
   .s-objects
     padding: 50px 0 20px
 
@@ -767,6 +785,19 @@
         width: 100%
 
 @media(max-width: 390px)
+
+  .service-wrap
+    margin-bottom: 20px
+
+  .page-title
+    font-size: 22px
+
+  .scheme-wrap
+    display: block
+
+  .scheme-item
+    margin-bottom: 20px
+    padding-left: 0
 
   .object-slide
     height: 180px
