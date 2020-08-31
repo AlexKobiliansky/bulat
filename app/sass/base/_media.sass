@@ -28,6 +28,12 @@
 
 @media (max-width: 1500px)
 
+  .servs-wrap
+    grid-gap: 20px
+
+  .serv-item-title
+    font-size: 16px
+
   .object-item
     &-right
       padding-top: 0
@@ -130,7 +136,7 @@
     .form-labels-wrap
       margin-bottom: 30px
 
-  .clouds-wrap, .delivery-bottomline-wrap
+  .clouds-wrap, .delivery-bottomline-wrap, .s-servs
     form
       padding: 40px 30px
 
@@ -138,7 +144,7 @@
     .section-form
       width: 400px
 
-  .form-img-wrap
+  .form-img-wrap, .s-form-description
     width: calc(100% - 400px)
 
   .main-mnu
@@ -207,6 +213,26 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .s-servs
+    .s-form-block
+      flex-direction: column
+      form
+        width: 100%
+        padding-left: 200px
+        padding-right: 200px
+        &:after
+          display: none
+
+  .s-form-description
+    width: 100%
+    padding-top: 0
+
+  .serv-item
+    padding: 20px 15px
+    &-title
+      font-size: 14px
+      width: calc(100% - 30px)
 
   .page-head
     .page-title
@@ -321,6 +347,23 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-servs
+    .s-form-block
+      form
+        padding-left: 50px
+        padding-right: 50px
+
+  .s-form-description
+    padding-bottom: 50px
+
+  .s-servs
+    .page-title
+      padding-left: 0
+      margin-bottom: 30px
+
+  .servs-wrap
+    grid-template-columns: repeat(3, 1fr)
 
   .serts-wrap
     grid-template-columns: repeat(3, 1fr)
@@ -440,6 +483,9 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .servs-wrap
+    grid-template-columns: repeat(2, 1fr)
 
   .s-news
     padding-bottom: 20px
@@ -564,6 +610,26 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-servs
+    .s-form-block
+      form
+        padding-left: 25px
+        padding-right: 25px
+
+  .s-form-description
+    padding-left: 25px
+    padding-right: 25px
+
+  .servs-wrap
+    grid-gap: 10px
+
+  .serv-item
+    height: 160px
+    &-title
+      top: 15px
+      font-size: 12px
+      line-height: 1.25
 
   .s-sertificates
     padding-top: 50px
@@ -819,6 +885,25 @@
         width: 100%
 
 @media(max-width: 390px)
+
+  .s-servs
+    .s-form-block
+      form
+        padding-left: 15px
+        padding-right: 15px
+
+  .s-form-description
+    padding-left: 15px
+    padding-right: 15px
+    padding-bottom: 30px
+    font-size: 12px
+
+  .serv-item
+    height: 140px
+    &-title
+      font-size: 10px
+      left: 7px
+      top: 10px
 
   .serts-wrap
     grid-gap: 8px

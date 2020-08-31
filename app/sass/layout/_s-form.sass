@@ -9,7 +9,7 @@
   width: calc(100% - 510px)
 
 
-.clouds-wrap, .delivery-bottomline-wrap
+.clouds-wrap, .delivery-bottomline-wrap, .s-servs
   position: relative
   z-index: 3
   form
@@ -18,3 +18,20 @@
     position: relative
     top: -105px
     box-shadow: 0 0 20px rgba(#000, .1)
+
+.s-form-description
+  width: calc(100% - 510px)
+  background-color: #fff
+  padding: 80px 40px
+
+.s-servs
+  form
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      width: 1px
+      height: calc(100% - 100px)
+      right: 0
+      top: 40px
+      background-color: #758aab
