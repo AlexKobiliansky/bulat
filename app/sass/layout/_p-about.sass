@@ -1,0 +1,61 @@
+.p-about
+  background-image: url('../img/bg-about-2.jpg')
+  +bg-cover()
+  color: #fff
+  padding-bottom: 300px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    background-color: rgba($text, .25)
+  .container
+    position: relative
+  .section-title
+    font-weight: 700
+  .breadcrumbs
+    padding-bottom: 30px
+
+.p-about-wrap
+  display: flex
+  align-items: flex-start
+
+.p-about-left
+  width: 50%
+  padding-right: 40px
+  .section-title
+    margin-bottom: 50px
+
+.p-about-right
+  width: 50%
+  .section-title
+    margin-bottom: 15px
+
+.rent-wrap
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-gap: 25px
+  counter-reset: rent-item
+
+.rent-item
+  position: relative
+  padding-top: 35px
+  counter-increment: scheme-item
+  &:before
+    content: counter(scheme-item)
+    position: absolute
+    width: 30px
+    height: 26px
+    background-color: $accent
+    font-size: 21px
+    font-weight: 900
+    color: #fff
+    display: flex
+    justify-content: center
+    align-items: center
+    line-height: 1
+    left: 0
+    top: 0

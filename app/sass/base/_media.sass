@@ -322,6 +322,24 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .serts-wrap
+    grid-template-columns: repeat(3, 1fr)
+
+  .p-about
+    padding-bottom: 150px
+    &:before
+      background-color: rgba($text, .5)
+
+  .p-about-wrap
+    flex-direction: column
+
+  .p-about-left
+    width: 100%
+    margin-bottom: 50px
+
+  .p-about-right
+    width: 100%
+
   .s-service
     padding: 50px 0
 
@@ -546,6 +564,22 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-sertificates
+    padding-top: 50px
+
+  .s-reviews.p-reviews
+    padding-top: 50px
+
+  .serts-wrap
+    grid-template-columns: repeat(2, 1fr)
+
+  .p-about
+    .section-title
+      margin-bottom: 20px
+
+  .rent-wrap
+    display: block
 
   .object-item
     margin-bottom: 50px
@@ -785,6 +819,9 @@
         width: 100%
 
 @media(max-width: 390px)
+
+  .serts-wrap
+    grid-gap: 8px
 
   .service-wrap
     margin-bottom: 20px
